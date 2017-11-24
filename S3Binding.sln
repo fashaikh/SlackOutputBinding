@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26507.0
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackOutputBinding", "SlackOutputBinding\SlackOutputBinding.csproj", "{1531112B-CD9F-4AD8-BD7B-CF90444F4053}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleFunctionApp", "SampleFunctionApp\SampleFunctionApp.csproj", "{0EBCE513-E566-484F-B0C7-480B837B46E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3BlobBinding", "S3BlobOutputBinding\S3BlobBinding.csproj", "{86D2733A-DADF-4A16-A38D-D5970FEBE4AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1531112B-CD9F-4AD8-BD7B-CF90444F4053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1531112B-CD9F-4AD8-BD7B-CF90444F4053}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1531112B-CD9F-4AD8-BD7B-CF90444F4053}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1531112B-CD9F-4AD8-BD7B-CF90444F4053}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0EBCE513-E566-484F-B0C7-480B837B46E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0EBCE513-E566-484F-B0C7-480B837B46E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EBCE513-E566-484F-B0C7-480B837B46E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EBCE513-E566-484F-B0C7-480B837B46E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D2733A-DADF-4A16-A38D-D5970FEBE4AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D2733A-DADF-4A16-A38D-D5970FEBE4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D2733A-DADF-4A16-A38D-D5970FEBE4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D2733A-DADF-4A16-A38D-D5970FEBE4AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DACD8F2C-44B3-4C4C-8BD8-524634B1CDCE}
 	EndGlobalSection
 EndGlobal

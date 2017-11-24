@@ -3,28 +3,20 @@
     <TargetFramework>net461</TargetFramework>
     <PostBuildEvent>
       if not exist $(OutDir)Extensions mkdir $(OutDir)Extensions
-      copy $(TargetDir)bin\SlackBindingExtension.dll Extensions\</PostBuildEvent>
+      copy $(TargetDir)bin\S3BlobBindingExtension.dll Extensions\</PostBuildEvent>
   </PropertyGroup>
-
   <ItemGroup>
-    <Content Include="HttpTriggerSlackJS\HttpTriggerSlackJS.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DocumentDB" Version="1.0.0" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SlackOutputBinding\SlackOutputBinding.csproj" />
+    <ProjectReference Include="..\S3BlobOutputBinding\S3BlobBinding.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="HttpTriggerSlackJS\function.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="local.settings.json">

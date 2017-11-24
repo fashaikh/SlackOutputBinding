@@ -4,5 +4,10 @@
     "AzureWebJobsStorage": "",
     "AzureWebJobsDashboard": "",
     "AzureWebJobs_ExtensionsPath": ".",
+    "AWSAccessKeyID": "",
+    "AWSSecretAccessKey": "",
+    "BucketName": "",
+    "OcpApiKey": "",
+    "CosmosDB": ""
   }
 }
