@@ -3,16 +3,10 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using SampleExtension;
 using System.IO;
-using Microsoft.WindowsAzure.Storage.Blob;
-using System.Net;
 using Newtonsoft.Json;
-using System.Text;
 using System.Collections.Generic;
-using AWSSignatureV4_S3_Sample.Signers;
-using AWSSignatureV4_S3_Sample.Util;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using Microsoft.Azure.WebJobs.Extensions.DocumentDB;
 
 
 
@@ -32,10 +26,7 @@ namespace SampleFunctionApp
         [S3Blob("thisischangedbelow")] out S3BlobMessage s3BlobOutputMessage,
         IBinder binderForAzureStorage,
         [Queue("s3images")] out string newImageGuid,
-        [DocumentDB("ocrDatabase",
-        "ocrCollection",
-        ConnectionStringSetting = "CosmosDB",
-        CreateIfNotExists = true)] out object ocrData,
+        [DocumentDB("ocrDatabase","ocrCollection",ConnectionStringSetting = "CosmosDB",CreateIfNotExists = true)] out object ocrData,
         TraceWriter log)
         {
             log.Info($"C# Timer trigger function executed at: {DateTime.Now}");
@@ -63,7 +54,6 @@ namespace SampleFunctionApp
         private static List<string> OCRUsingCognitiveAPI(byte[] byteData)
         {
             var serviceUrl = "https://westus.api.cognitive.microsoft.com/vision/v1.0/ocr?language=unk&detectOrientation=true";
-            //var imagedata = JsonConvert.SerializeObject(new { url = "https://cnn.com" });
             List<string> ocrtext = new List<string>();
 
             using (var client = new HttpClient())
@@ -87,7 +77,6 @@ namespace SampleFunctionApp
                             }
                          }
                     }
-
                     return ocrtext;
                 }
             }

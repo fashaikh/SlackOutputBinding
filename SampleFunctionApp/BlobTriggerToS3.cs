@@ -1,11 +1,7 @@
-using System.Net;
-using System.Net.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using SampleExtension;
-using System.Threading.Tasks;
 using System.IO;
-using System;
 
 namespace SampleFunctionApp
 {
