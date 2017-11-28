@@ -1,6 +1,7 @@
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using SampleExtension;
+using System;
 using System.IO;
 
 namespace SampleFunctionApp
@@ -17,6 +18,7 @@ namespace SampleFunctionApp
             [S3Blob("fromazure/{name}.png")] out S3BlobMessage S3BlobMessage,
             TraceWriter log)
         {
+            log.Info($"Copying blob from Azure Storage to S3 at {DateTime.Now}") ;
             S3BlobMessage = new S3BlobMessage { Data =  input, BucketName="functions-demo"};
         }
 
