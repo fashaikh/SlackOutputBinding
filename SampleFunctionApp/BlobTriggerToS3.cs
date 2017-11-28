@@ -17,7 +17,7 @@ namespace SampleFunctionApp
             [S3Blob("fromazure/{name}.png")] out S3BlobMessage S3BlobMessage,
             TraceWriter log)
         {
-            S3BlobMessage = new S3BlobMessage { Data =  input, BucketName="faiz-functions"};
+            S3BlobMessage = new S3BlobMessage { Data =  input, BucketName="functions-demo"};
         }
 
 
