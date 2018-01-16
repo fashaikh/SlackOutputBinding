@@ -63,7 +63,14 @@ namespace SQSDemo
                 var receiveMessageResponse = sqsClient.ReceiveMessageAsync(receiveMessageRequest).GetAwaiter().GetResult();
                 foreach (var message in receiveMessageResponse.Messages)
                 {
-                   Console.WriteLine($"Received MessageId {message.MessageId}:{message.Body}");  
+                    Console.WriteLine($"Received MessageId {message.MessageId}:{message.Body}");
+
+                    // Good. Now we need to delete it from the queue.
+                    var deleteMessageRequest = new DeleteMessageRequest();
+                    deleteMessageRequest.QueueUrl = myQueueURL;
+                    deleteMessageRequest.ReceiptHandle = message.ReceiptHandle;
+                    var response = sqsClient.DeleteMessageAsync(deleteMessageRequest).GetAwaiter().GetResult();
+                    Console.WriteLine($"Message Delete Response: {response.HttpStatusCode.ToString()}");
                 }
                 Console.WriteLine($"Done Reading messages.");
                 Console.WriteLine($"=======================================================================");
