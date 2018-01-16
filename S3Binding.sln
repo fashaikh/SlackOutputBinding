@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2010
+VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleFunctionApp", "SampleFunctionApp\SampleFunctionApp.csproj", "{0EBCE513-E566-484F-B0C7-480B837B46E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3BlobBinding", "S3BlobOutputBinding\S3BlobBinding.csproj", "{86D2733A-DADF-4A16-A38D-D5970FEBE4AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S3QueueBinding", "S3QueueBinding\S3QueueBinding.csproj", "{51CBE8F0-FBAE-4CC5-B4DB-C84E8A6D57DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQSDemo", "AWSQueue\SQSDemo.csproj", "{DD380936-49B3-4133-8518-376E1E33B8BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{86D2733A-DADF-4A16-A38D-D5970FEBE4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86D2733A-DADF-4A16-A38D-D5970FEBE4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86D2733A-DADF-4A16-A38D-D5970FEBE4AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51CBE8F0-FBAE-4CC5-B4DB-C84E8A6D57DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51CBE8F0-FBAE-4CC5-B4DB-C84E8A6D57DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51CBE8F0-FBAE-4CC5-B4DB-C84E8A6D57DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51CBE8F0-FBAE-4CC5-B4DB-C84E8A6D57DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD380936-49B3-4133-8518-376E1E33B8BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD380936-49B3-4133-8518-376E1E33B8BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD380936-49B3-4133-8518-376E1E33B8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD380936-49B3-4133-8518-376E1E33B8BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

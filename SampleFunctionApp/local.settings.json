@@ -1,13 +1,13 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=a64fcba0960bc4d15bbf0be8;AccountKey=+U0O0nXDoshaH5Fm03mfV8JoiODMvk4dqqNDTkqmimUd/wo7drc84lr1PFlNeQ2l1sKmTStLfAbq+SHT+7pjGg==",
     "AzureWebJobsDashboard": "",
     "AzureWebJobs_ExtensionsPath": ".",
-    "AWSAccessKeyID": "",
-    "AWSSecretAccessKey": "",
-    "BucketName": "",
-    "OcpApiKey": "",
-    "CosmosDB": ""
+    "AWSAccessKeyID": "AKIAJBRRWG5BXXIIJEBA",
+    "AWSSecretAccessKey": "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",
+    "BucketName": "faiz-functions",
+    "OcpApiKey": "919489baa59342efa5050e453260a581",
+    "CosmosDB": "AccountEndpoint=https://functionsocr.documents.azure.com:443/;AccountKey=d3D9nJDTgABm5kfAjsp7vCf7Bzr5Ktlk0cwqSe39EE6xl6s1qeLFln07ay41L3a8yG82WCx4rWB7XdIg3U4LgQ==;"
   }
 }

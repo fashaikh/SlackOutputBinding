@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AWSAccessKeyID": "AKIAJBRRWG5BXXIIJEBA",
+    "AWSSecretAccessKey": "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",
+    "BucketName": "faiz-functions",
+    "AWSSQSServiceURL": "http://sqs.us-west-2.amazonaws.com",
+    "SQSFIFOQueueName": "sqsfunctionsdemo.fifo",
+  }
+}
