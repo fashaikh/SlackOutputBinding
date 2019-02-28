@@ -1,4 +1,4 @@
-# FunctionApp with with AWS S3 Binding
+# FunctionApp v1 with with AWS S3 and CosmosDB 
 
 This is code for an [Azure Function](https://azure.microsoft.com/en-us/services/functions/) .
 This is modeled off of https://github.com/lindydonna/SlackOutputBinding . 
