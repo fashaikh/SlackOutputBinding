@@ -12,6 +12,26 @@
       "type": "string",
       "metadata": {
         "description": "The Azure Cosmos DB database account name."
+      },
+      "AWSAccessKeyID": {
+      "type": "string",
+      "metadata": {
+        "description": "AWSAccessKeyID with access to the AWS S3 storage account."
+      },
+      "AWSSecretAccessKey": {
+      "type": "string",
+      "metadata": {
+        "description": "Secret for the AWS S3 Access Key. Follow these instructions to get these secrets https://www.cloudberrylab.com/resources/blog/how-to-find-your-aws-access-key-id-and-secret-access-key/ "
+      },
+      "BucketName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the S3 bucket you plan to use. eg functions-demo."
+      },
+      "OcpApiKey": {
+      "type": "string",
+      "metadata": {
+        "description": "from Microsoft Cognitive Services. Get yours here https://labs.cognitive.microsoft.com/en-US/sign-up?ReturnUrl=/en-us/subscriptions."
       }
     },
 
