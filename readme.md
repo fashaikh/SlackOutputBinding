@@ -15,8 +15,8 @@ Additionally it pushes the guid name to an Azure storage queue
 Creates a pre signed Url for any bucketName and objectKey in the S3 bucket you own
 
 #### BlobTriggerToS3:
-Reads from Azure Storage tos3/ container 
-and makes a copy in AWS S3 fromazure/ folder (all in one line)
+Reads from Azure Storage `tos3/container` 
+and makes a copy in AWS S3 `fromazure/folder` (all in one line)
     The main limitations are:
     1) Cannot trigger on S3 blob creates, only can use them as input or outputs
     2) Cannot use dynamic S3 path names for input, only available for output
@@ -49,7 +49,11 @@ and makes a copy in AWS S3 fromazure/ folder (all in one line)
     "BlobStorageContainerName": "",
     "BlobStorageBlobName": "",
     "tenantId" : "",
-    "AzureServicesAuthConnectionString":"RunAs=App;AppId=<>;TenantId=<>;AppKey=<>"
+    "AzureServicesAuthConnectionString":"RunAs=App;AppId=<>;TenantId=<>;AppKey=<>",
+    "AWSAccessKeyID" :"",
+    "AWSSecretAccessKey" :"", 
+    "BucketName" : "",
+    "OcpApiKey" : ""
     }
 }
 ```
