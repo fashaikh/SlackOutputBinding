@@ -1,7 +1,7 @@
 # FunctionApp v1 with with AWS S3 and CosmosDB 
 
 This is code for an [Azure Function](https://azure.microsoft.com/en-us/services/functions/) .
-This is modeled off of https://github.com/lindydonna/SlackOutputBinding . 
+The v1 S3 bindings are modeled off of https://github.com/lindydonna/SlackOutputBinding . 
 
 Once installed it creates a Function App linked to an S3 bucket account and a CosmosDB database.
 
@@ -30,8 +30,8 @@ and makes a copy in AWS S3 fromazure/ folder (all in one line)
 #### To run in Azure, run the ARM Template found in azuredeploy.json and then fill in the app settings with the following values:
 - FunctionApp Name : The name of the function App you want to create
 - AWSAccessKeyID : With access to the AWS S3 storage account
-- AWSSecretAccessKey : Password for the AWS S3 Access Key
-- BucketName : Functions demo
+- AWSSecretAccessKey : Secret for the AWS S3 Access Key. Follow these instructions to get these secrets https://www.cloudberrylab.com/resources/blog/how-to-find-your-aws-access-key-id-and-secret-access-key/ 
+- BucketName : Name of the S3 bucket you plan to use. eg functions-demo
 - OcpApiKey : from Microsoft Cognitive Services. Get yours here https://labs.cognitive.microsoft.com/en-US/sign-up?ReturnUrl=/en-us/subscriptions
 
 
