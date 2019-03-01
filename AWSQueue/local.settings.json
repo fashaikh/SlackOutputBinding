@@ -3,8 +3,8 @@
   "Values": {
     "AWSAccessKeyID": "",
     "AWSSecretAccessKey": "",
-    "BucketName": "faiz-functions",
-    "AWSSQSServiceURL": "http://sqs.us-west-2.amazonaws.com",
-    "SQSFIFOQueueName": "sqsfunctionsdemo.fifo"
+    "BucketName": "",
+    "AWSSQSServiceURL": "",
+    "SQSFIFOQueueName": ""
   }
 }
