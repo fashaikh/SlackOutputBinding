@@ -23,9 +23,9 @@ and makes a copy in AWS S3 `fromazure/folder` (all in one line)
 
 
 ## Quick Deploy to Azure
-
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.svg)](https://azuredeploy.net/)
-### Step 1 Deploy FunctionApp Template ![Step 1](https://user-images.githubusercontent.com/2650941/53583547-a4c29880-3b36-11e9-808c-0b2937a43691.PNG)
+
+### Step 1 Start FunctionApp Template ![step1 dewploymkent comp lete](https://user-images.githubusercontent.com/2650941/53660706-5cc57380-3c13-11e9-9d35-dff8a18c3b20.PNG)
 
 ### Step 2 Get AWS Access Key 
 From your AWS account account using these instructions https://www.cloudberrylab.com/resources/blog/how-to-find-your-aws-access-key-id-and-secret-access-key/ 
