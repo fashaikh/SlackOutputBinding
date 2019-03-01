@@ -47,7 +47,9 @@
       "branch": "master",
       "storageAccountName": "[concat('storage', uniquestring(resourceGroup().id))]",
       "storageAccountid": "[concat(resourceGroup().id,'/providers/','Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
-      "databaseAccountTier": "Standard"
+      "databaseAccountTier": "Standard",
+      "accountEndpoint": "[concat('https://', parameters('databaseAccountName'),'.documents.azure.com:443/')]",
+
   },
     "resources": [
     {
@@ -148,7 +150,7 @@
                     },
                     {
                       "name": "CosmosDB",
-                      "value": "[concat('AccountName=', reference(concat('Microsoft.DocumentDb/databaseAccounts/', parameters('databaseAccountName'))).documentEndpoint, ';AccountKey=', listKeys(resourceId('Microsoft.DocumentDb/databaseAccounts', parameters('databaseAccountName')), '2015-04-08').primaryMasterKey)]"
+                      "value": "[concat('AccountName=', variables('accountEndpoint'), ';AccountKey=', listKeys(resourceId('Microsoft.DocumentDb/databaseAccounts', parameters('databaseAccountName')), '2015-04-08').primaryMasterKey)]"
                     }
                 ]
             }
