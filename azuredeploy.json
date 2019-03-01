@@ -148,7 +148,7 @@
                     },
                     {
                       "name": "CosmosDB",
-                      "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', reference(concat('Microsoft.DocumentDb/databaseAccounts/', parameters('databaseAccountName'))).documentEndpoint, ';AccountKey=', listKeys(resourceId('Microsoft.DocumentDb/databaseAccounts', parameters('databaseAccountName')), '2015-04-08').primaryMasterKey)]"
+                      "value": "[concat('AccountName=', reference(concat('Microsoft.DocumentDb/databaseAccounts/', parameters('databaseAccountName'))).documentEndpoint, ';AccountKey=', listKeys(resourceId('Microsoft.DocumentDb/databaseAccounts', parameters('databaseAccountName')), '2015-04-08').primaryMasterKey)]"
                     }
                 ]
             }
