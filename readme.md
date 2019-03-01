@@ -60,11 +60,11 @@ https://s3.console.aws.amazon.com/s3/buckets/<bucketname>/?region=us-west-2&tab=
 #### Demo 1 : S3 to Storage and Cosmos ![Step 3 Execute Function ]
 
 For the demo you can upload an image to input/imagetoOCR.png . 
-![steo 4 s3](https://user-images.githubusercontent.com/2650941/53659984-baf15700-3c11-11e9-96fe-5c2ce40b0816.png
+![steo 6 output](https://user-images.githubusercontent.com/2650941/53659984-baf15700-3c11-11e9-96fe-5c2ce40b0816.png)
 Here is a sample image. You can change / add text it or use your own png image
 <img width="459" alt="steo 5 sample image" src="https://user-images.githubusercontent.com/2650941/53659985-baf15700-3c11-11e9-9a60-525fcd8b4896.png">
 Once this is uploaded you can open the S3ImageOCR function in portal and hit run on it. 
-(I’ve made it an httptrigger so its easy to demo any changes.)
+I’ve made it an httptrigger so its easy to demo any changes.
 
 The output can be see in portal and in appInsights.
 
@@ -76,7 +76,7 @@ Once executed you can also show the OCR output stored in cosmosdb
 Also a copy is created in S3 output/ bucket, and azure storage:
 
 ![steo 9 storage and s3 copy](https://user-images.githubusercontent.com/2650941/53659989-bb89ed80-3c11-11e9-8173-940ad5ce7f93.png)
-You can also show the output of QueueTriggerOCRFromS3 which should have the same guid read from the azure storage queue.
+You can also see the output of QueueTriggerOCRFromS3 which should have the same guid read from the azure storage queue.
 
 #### Demo 2 : Azure Storage to S3 ![Step 3 Execute Function ]
 Using storage explorer upload an image to tos3/container:
