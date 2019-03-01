@@ -1,4 +1,4 @@
-# FunctionApp v1 with with AWS S3 and CosmosDB 
+# FunctionApp v1 with AWS S3 bucket and queue bindings Cognitive Services and CosmosDB 
 
 This is code for an [Azure Function](https://azure.microsoft.com/en-us/services/functions/) .
 The v1 S3 bindings are modeled off of https://github.com/lindydonna/SlackOutputBinding . 
