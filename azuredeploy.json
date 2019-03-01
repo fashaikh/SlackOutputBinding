@@ -147,8 +147,12 @@
                         "value": "~1"
                     },
                     {
-                      "name": "CosmosDB",
-                      "value": "[concat('AccountEndpoint=',reference(concat('Microsoft.DocumentDb/databaseAccounts/', parameters('databaseAccountName'))).documentEndpoint,';AccountKey=',listKeys(resourceId('Microsoft.DocumentDb/databaseAccounts', parameters('databaseAccountName')), '2015-04-08').primaryMasterKey))]",
+                      "name": "COSMOSDB_ENDPOINT",
+                      "value": "[reference(concat('Microsoft.DocumentDb/databaseAccounts/', parameters('databaseAccountName'))).documentEndpoint]"
+                    },
+                    {
+                      "name": "COSMOSDB_PRIMARY_KEY",
+                      "value": "[listKeys(resourceId('Microsoft.DocumentDb/databaseAccounts', parameters('databaseAccountName')), '2015-04-08').primaryMasterKey]"
                     }
                 ]
             }
